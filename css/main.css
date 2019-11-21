@@ -80,9 +80,7 @@ section p {
   margin: 10px;
 }
 
-.top{
-margin-bottom:120px;
-}
+
 
 
 p {
@@ -94,8 +92,8 @@ p {
 
 
 .top {
-  position: relative;
-  text-align: center;
+  position: absolute;
+
 }
 
 iframe {
@@ -114,6 +112,7 @@ iframe {
 
 .content {
   text-align: center;
+   display:block;
 }
 
 .content p {
