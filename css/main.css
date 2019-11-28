@@ -1,4 +1,5 @@
 
+
 #bg {
   position: fixed;
   top: -50%;
@@ -21,11 +22,11 @@
 
 body {
   font-family: serif;
-  padding: 2rem;
+
 }
 
 h1 {
-  font-family: serif;
+  font-family:serif;
   color: 	white;
   font-size: 56px;
   position: absolute;
@@ -35,11 +36,30 @@ h1 {
     text-align:center;
 }
 
+h5 {
+  line-height: 90px;
+  float: left;
+  font-size: 36px;
+  text-decoration: none;
+  color: skyblue;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li a{
+  color:black;
+    font-family: Gill Sans, sans-serif;
+}
+
+li a:hover{
+  color:skyblue;
+}
 
 nav {
     margin:1rem;
-    text-align:center;
-}
+    text-align:center
+  }
 
 nav a {
   padding: 0px 30px;
@@ -50,7 +70,7 @@ nav a:hover {
 color: skyblue;
 }
 
-.navigation{
+.navigation {
   border:1px solid #ccc;
   border-width:1px 0;
   font-family: serif;
@@ -66,7 +86,8 @@ color: white;
 }
 
 section:not([id]) {
-
+margin-left:2rem;
+margin-right:2rem;
   padding: 1em 0;
   border-top: 1px solid #333;
 }
@@ -76,52 +97,56 @@ section p {
 }
 
 h4{
+  margin-left: 2rem;
   font-family: serif;
-  color: darkgrey;
-  font-size: 56px;
+  color: grey;
+  opacity:0.6;
+  font-size: 32px;
   text-align: left;
   margin-top: 80px;
     margin-bottom: 20;
 }
 
-
+h3{
+    margin-top: 1rem;
+}
 
 p {
-  font-family: serif;
+  margin-left: 2rem;
+  font-family: Gill Sans, sans-serif;
   margin: 15px;
   line-height: 25px;
   max-width: 100ch;
+  font-size: 18px;
 }
-
 
 
 iframe {
 	max-width: 100%;
 	max-height: 100%;
-      margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 
 .bioPhoto{
-  min-width: 50%;
-  max-width: 50%;
-  height:auto;
+max-width:40%;
+  height: auto;
   border-radius: 50%;
   margin-top: 20px;
 }
 
 .content {
-  text-align: center;
-
+  text-align: left;
 }
 
 .content p {
  margin-left: auto;
  margin-right: auto;
-  display:inline-block;
+ display:inline-block;
+
 }
 
-.email{
+.email {
   font-family: "Courier New", monospace;
   font-size: 21px;
   font-weight: lighter;
@@ -141,6 +166,10 @@ a:hover {
 }
 
 
+
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -148,15 +177,16 @@ a:hover {
 
 .header{
   height: 100px;
-  background: grey;
   padding: 0 20px;
-  color: white;
+  color: skyblue;
 }
 
-.logo{
-  line-height: 100px;
+.logo a{
+  line-height: 90px;
   float: left;
-  font-size: 41px;
+  font-size: 56px;
+  text-decoration: none;
+  color: skyblue;
 }
 
 .menu{
@@ -165,11 +195,12 @@ a:hover {
 }
 
 .menu a{
-  color: white;
+  font-family: Optima, sans-serif;
+  color: grey;
   text-decoration: none;
-  padding: 0 10px;
-  transition: 0.4s;
-font-size: 21px;
+  padding: 0 15px;
+  transition: 0.8s;
+  font-size: 21px;
 }
 
 .show-menu-btn,.hide-menu-btn{
@@ -214,7 +245,23 @@ font-size: 21px;
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
+  .bioPhoto{
+  min-width:50%;
+  max-width:50%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .content{
+    text-align: center;
+  }
+
   .show-menu-btn,.hide-menu-btn{
     display: block;
   }
@@ -235,6 +282,7 @@ font-size: 21px;
   .menu a{
     display: block;
     padding: 20px;
+    color:white;
   }
 
   .hide-menu-btn{
@@ -248,3 +296,88 @@ font-size: 21px;
   }
 }
 
+
+
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+
+.inner-width{
+
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  font-size:36px;1
+  text-align: center;
+  color:grey;
+}
+
+.border{
+  width: 300px;
+  height: 3px;
+  background: grey;
+  margin: 30px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  margin: 15px;
+  flex: 30%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+
+.gallery-section .image:hover img{
+  transform: scale(1.2) rotate(5deg);
+}
+
+.backToTop a{
+  text-decoration: none;
+  color:grey;
+}
+
+.backToTop a:hover{
+  color:skyblue;
+}
+
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
